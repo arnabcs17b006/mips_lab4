@@ -50,4 +50,4 @@ main:
      sw $s2,28($sp)
      sw $s1,32($sp)
      sw $s0,36($sp)
-     j  $31 
+     j $31 
