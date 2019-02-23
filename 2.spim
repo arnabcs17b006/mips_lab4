@@ -49,5 +49,5 @@ main:
      sw $s3,24($sp)
      sw $s2,28($sp)
      sw $s1,32($sp)
-     sw $s9,36($sp)
+     sw $s0,36($sp)
      j  $31 
