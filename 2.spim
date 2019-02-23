@@ -39,7 +39,7 @@ main:
      slt $s1,$s0,$s5
      slt $s1,$s0,$s9
      addi $s5,$s0,0  
-     addi$sp,$sp,8
+     addi $sp,$sp,40
      sw $s9,0($sp)
      sw $s8,4($sp)
      sw $s7,8($sp)
