@@ -31,8 +31,18 @@ L1:
     
  L2:
     beq $t1,$s0,E
+    lw $t4,0($s0)
+    lw $t5,0($s1)
+    sw $t5,$s0
+    sw $t4,$s1
+    addi $s0,$s0,4
+    addi $s1,$s1,4
+    addi $t1,$t1,1
+    b L2
     
  
     
   
   
+  E:
+  j $31
