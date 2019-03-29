@@ -1,7 +1,7 @@
        .data
-first_arr:    .space 100           
+first_arr:    .space 20        
 size1:  .word  5             
-second_arr:    .space 100
+second_arr:    .space 20
 size2:  .word  5
    
         .text
