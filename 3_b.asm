@@ -1,16 +1,16 @@
 
  .data
-first_arr:    .space 100           
+arr1:    .space 100           
 size1:  .word  5             
-second_arr:    .space 100
+arr2:    .space 100
 size2:  .word  5
    
         .text
 main:   
         lb   $s0,size1                         
         lb   $s1,size2                          
-        la   $s2,first_arr                      
-        la   $s3,second_arr                      
+        la   $s2,arr1                      
+        la   $s3,arr2                      
         move $s4,$s2                            
         move $s5,$s3                           
         li   $t0,0                              
@@ -29,10 +29,10 @@ L1:
         addi $s2,$s2,1                          
         addi $s3,$s3,1                         
         addi $t0,$t0,1                         
-        b L1                                  
+        j L1                                  
 
 L2:   
-        beq  $t1,$s0,EnD                       
+        beq  $t1,$s0,E                     
         lb $t4,0($s4)                          
         sb $s5,0($s4)                           
         lb $t5,0($s5)                          
@@ -40,8 +40,8 @@ L2:
         addi $s4,$s4,1                          
         addi $s5,$s5,1                         
         addi $t1,$t1,1                          
-        b L2                           
+        j L2                           
 
 
-EnD:
-jr $ra 
+E:
+j $ra 
