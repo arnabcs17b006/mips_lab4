@@ -3,11 +3,11 @@ main:
 	sw   $s0,8($sp)
 	sw   $s1,4($sp)
 	sw   $s2,0($sp)
-	addi $s0,$zero,12
-	addi $s1,$zero,0
-	addi $s2,$zero,0
-	addi $t0,$zero,0
-	addi $t1,$zero,1
+	li $s0,12
+	li $s1,0
+	li $s2,0
+	li $t0,0
+	li $t1,1
 L1:     sll  $t3,$t1,$t0
         and  $t2,$s0,$t3
         addi $t0,$t0,1
